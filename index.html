@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cours HTML Bastia</title>
     <meta name="description" content="Le cours d'introduction HTML/CSS" />
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+  </style>
   </head>
   <body>
+    <a id="haut-de-page" href="#tout-en-bas">Aller tout en bas</a>
+
+    <!-- Partie Titre -->
     <h1>Mon premier cours d'HTML</h1>
     <br />
     <h2>Jour 1</h2>
@@ -15,6 +23,8 @@
     <h4>Jour 1</h4>
     <h5>Jour 1</h5>
     <h6>Jour 1</h6>
+
+    <!-- Partie Paragraphe -->
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Text</p>
     <p><mark>Text</mark></p>
@@ -31,5 +41,17 @@
     <p>Ce texte est <blockquote>un test du test du test</blockquote></p>
     <p>Ce texte<sup>un exposant</sup></p>
     <p>Ce texte<sub>un exposant</sub></p>
+
+    <!-- Intégration CSS dans balise HTML -->
+    <span style="color: rgba(250, 0, 0, 1);">Ce texte est un aboutissement du beau</span>
+    <p><i><strong>Texte tout beau</strong></i></p>
+
+    <!-- Partie image avec attributs -->
+    <div><a target="_blank" href="https://www.youtube.com/watch?v=1HlbDfE23Jw"><img src="/images/youtube.jpg" alt="Petit chaton" loading="lazy" width="300px" height="300px"></a></div>
+    <p>Coucou</p>
+    <p>Hello</p>
+    <div id="tout-en-bas"><a href="https://google.com" style="text-decoration: none; color: purple;" target="_blank">Google</a></div><br>
+    <a href="pages/contact.html">Contactez-nous</a>
+    <div><a href="#haut-de-page">Retour en haut</a></div>
   </body>
 </html>
