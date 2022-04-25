@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tableaux et listes</title>
+  </head>
+  <body>
+    <ul
+      style="
+        border: solid 2px black;
+        box-shadow: 2px 2px 2px 2px rgb(87, 85, 85);
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-right: 35px;
+      "
+    >
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="tables-and-lists.html">Tableaux et listes</a></li>
+      <li><a href="formulaire.html">Formulaires</a><br /><br /></li>
+      <li><a href="contact.html">Contactez-nous</a></li>
+      <li><a href="about-us.html">About Us</a><br /><br /></li>
+    </ul>
+    <h2>Les tableaux</h2>
+    <table border="1">
+      <caption>
+        Mon premier tableau
+      </caption>
+      <thead style="background-color: antiquewhite">
+        <tr>
+          <th colspan="2">Hello</th>
+          <th>Coucou</th>
+          <th>Toto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2" rowspan="2">Hello</td>
+          <td colspan="2">Coucou</td>
+        </tr>
+        <tr>
+          <td>Hello</td>
+          <td>Coucou</td>
+          <td>Proust</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Les listes</h2>
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="contact.html">Contactez-nous</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+    </ul>
+    <ul type="square">
+      <li>Proust</li>
+      <dt>Ce texte est indenté à ma liste</dt>
+      <li>KFC</li>
+      <p>test</p>
+      <li>
+        King
+        <div>test2</div>
+      </li>
+
+      <li>tuu</li>
+    </ul>
+    <dl>
+      <li>Toto</li>
+    </dl>
+    <ol type="I" start="3">
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Dolor veritatis excepturi beatae architecto?</li>
+      <li>Dolores saepe et nulla mollitia?</li>
+      <li>Voluptates explicabo doloremque sapiente quod?</li>
+      <li>Quaerat provident quisquam iure culpa.</li>
+    </ol>
+  </body>
+</html>

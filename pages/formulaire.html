@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul
+      style="
+        border: solid 2px black;
+        box-shadow: 2px 2px 2px 2px rgb(87, 85, 85);
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-right: 35px;
+      "
+    >
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="tables-and-lists.html">Tableaux et listes</a></li>
+      <li><a href="formulaire.html">Formulaires</a><br /><br /></li>
+      <li><a href="contact.html">Contactez-nous</a></li>
+      <li><a href="about-us.html">About us</a><br /><br /></li>
+    </ul>
+
+    <h3>Les Formulaires</h3>
+    <form
+      style="border: solid 1px blue; padding: 20px"
+      action="action.php"
+      method="post"
+      name="formulaire"
+    >
+      <label for="Mr">Mr</label>
+      <input type="radio" name="genre" id="Mr" checked />
+      <label for="Mme">Mme</label>
+      <input type="radio" name="genre" id="Mme" />
+      <br /><br /><br />
+      <div style="border: solid 2px black; padding: 10px; box-shadow: 2px, 2px, 2px, 2px rgb(47, 43, 43);">
+        <label for="nom">Nom</label>
+        <input
+          required
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="Votre nom"
+        />
+        <br /><br />
+        <label for="password">Mot de passe</label>
+        <input
+          required
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Votre mot de passe"
+        />
+        <br /><br />
+        <label for="date">Date de naissance</label>
+        <input type="date" name="date" id="date" />
+        <br /><br />
+        <label for="mail">Email</label>
+        <input
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Votre mail"
+        />
+      </div>
+      <br /><br /><br />
+      <div style="border: solid 1px; padding: 10px;">
+        <label for="voiture">Choisissez votre véhicule</label>
+        <select name="name" id="voiture">
+          <option value="audi">Audi</option>
+          <option value="bmw">BMW</option>
+          <option value="mercedes">Mercedes</option>
+        </select>
+      
+      <br /><br />
+      <label for="color">Choisissez une couleur</label>
+      <input style="width: 40px" type="color" name="color" id="color" />
+      <br /><br />
+      <textarea
+        name="comment"
+        id="comment"
+        cols="60"
+        rows="5"
+        placeholder="Entrez ici un commentaire."
+        maxlength="50"
+      ></textarea>
+      </div>
+      <br /><br /><br />
+
+      <label for="conditions">Accepter les conditions</label>
+      <input required type="checkbox" name="conditions" id="conditions" />
+      <br /><br />
+      <button type="submit">Soumettre</button>
+      <br /><br />
+    </form>
+  </body>
+</html>

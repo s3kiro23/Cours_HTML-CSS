@@ -7,7 +7,127 @@
     <title>Contactez-nous</title>
   </head>
   <body>
+    <ul
+      style="
+        border: solid 2px black;
+        box-shadow: 2px 2px 2px 2px rgb(87, 85, 85);
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-right: 35px;
+      "
+    >
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="tables-and-lists.html">Tableaux et listes</a></li>
+      <li><a href="formulaire.html">Formulaires</a><br /><br /></li>
+      <li><a href="contact.html">Contactez-nous</a></li>
+      <li><a href="about-us.html">About us</a><br /><br /></li>
+    </ul>
     <h1>Contactez-nous</h1>
-    <a href="../index.html">Revenir à l'accueil</a>
+    <p>Vous êtes sur la page <q>Contactez-nous</q></p>
+    <table border="1">
+      <tr>
+        <td colspan="3">Tous les champs précédés d'un astérisque (<span style="color: red;">*</span>) sont obligatoires.</td>
+      </tr>
+      <tr>
+        <tr></tr>
+        <td>
+          <label for="Mr"><span style="color: red;">*</span> Mr</label>
+          <input type="radio" name="genre" id="Mr" checked />
+         <td>
+          <label for="Mme">Mme</label>
+          <input type="radio" name="genre" id="Mme" />
+         </td> 
+         <td>
+          <label for="Mlle">Mlle</label>
+          <input type="radio" name="genre" id="Mlle" />
+         </td>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="nom"><span style="color: red;">*</span> Nom :</label>
+        </td>
+        <td>
+          <input
+          required
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="Votre nom"
+        />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="nom"><span style="color: red;">*</span> Prénom :</label>
+          <td>
+            <input
+            required
+            type="text"
+            name="nom"
+            id="nom"
+            placeholder="Votre nom"
+          />
+          </td>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="date">Date de naissance :</label>
+        </td>
+        <td>
+          <input type="date" name="date" id="date" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="mail"><span style="color: red;">*</span> Email :</label>
+        </td>
+        <td>
+          <input
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Votre mail"
+        />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="sujetContact"><span style="color: red;">*</span> Sujet du message :</label>
+        </td>
+        <td>
+          <input type="text" name="sujetContact" id="sujetContact">
+        </td>
+        
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label for="message"><span style="color: red;">*</span> Message</label>
+        </td>
+        <td>
+          <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <tr></tr>
+        <td colspan="3">
+          <label for="conditions"
+            ><i
+              ><span style="color: red;">*</span> Veuillez accepter les conditions d'utilisation du site</i
+            ></label
+          >
+          <input required type="checkbox" name="conditions" id="conditions" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <button type="submit">Soumettre</button>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

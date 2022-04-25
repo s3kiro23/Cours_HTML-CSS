@@ -13,10 +13,27 @@
   </style>
   </head>
   <body>
-    <a id="haut-de-page" href="#tout-en-bas">Aller tout en bas</a>
+    <ul
+      id="haut-de-page" 
+      style="
+        border: solid 2px black;
+        box-shadow: 2px 2px 2px 2px rgb(87, 85, 85);
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-right: 35px;
+      "
+    >
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="pages/tables-and-lists.html">Tableaux et listes</a></li>
+      <li><a href="pages/formulaire.html">Formulaires</a><br /><br /></li>
+      <li><a href="pages/contact.html">Contactez-nous</a></li>
+      <li><a href="pages/about-us.html">About us</a><br /><br /></li>
+    </ul>
 
     <!-- Partie Titre -->
-    <h1>Mon premier cours d'HTML</h1>
+    <a href="#tout-en-bas"><h1>Mon premier cours d'HTML</h1></a>
     <br />
     <h2>Jour 1</h2>
     <h3>Jour 1</h3>
@@ -50,8 +67,8 @@
     <div><a target="_blank" href="https://www.youtube.com/watch?v=1HlbDfE23Jw"><img src="/images/youtube.jpg" alt="Petit chaton" loading="lazy" width="300px" height="300px"></a></div>
     <p>Coucou</p>
     <p>Hello</p>
-    <div id="tout-en-bas"><a href="https://google.com" style="text-decoration: none; color: purple;" target="_blank">Google</a></div><br>
-    <a href="pages/contact.html">Contactez-nous</a>
-    <div><a href="#haut-de-page">Retour en haut</a></div>
+    <div><a href="https://google.com" style="text-decoration: none; color: purple;" target="_blank">Google</a></div><br>
+    <div><a href="pages/contact.html">Contactez-nous</a></div><br>
+    <div><a id="tout-en-bas" href="#haut-de-page">Retour en haut</a></div>
   </body>
 </html>
