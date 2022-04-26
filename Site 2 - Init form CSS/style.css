@@ -21,10 +21,9 @@ body {
 }
 
 .monParagraphe {
-  color: aliceblue;
-  font-size: 2.4rem;
-  font-size: small;
-  background-color: black;
+  color: black;
+  font-size: large;
+  background-color: white;
   display: inline-block;
   margin-top: 30px;
 }
@@ -32,7 +31,7 @@ body {
 nav {
     background-color: antiquewhite;
     padding: 0.5px;
-    border: 2px solid;
+    backdrop-filter: blur(10px);
 }
 
 .navBar {
@@ -49,6 +48,8 @@ nav {
     padding: 5px;
     text-decoration: none;
     display: inline-block;
+    color: black;
+    font-weight: bold;
 }
 
 .navBar a:hover{
@@ -56,9 +57,46 @@ nav {
     text-shadow: 2px;
 }
 
+.heading {
+    background-color: antiquewhite;
+    height: auto;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading .logo{
+    width: 5rem;
+    height: auto;
+    transition: all 0.75s;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
+
 .arrowBack {
     height: 30px;
 }
+
+.maCarte-body{
+    /* display: inline-block; */
+    width: 300px;
+    height: 300px;
+}
+
+.footer {
+    background-color: antiquewhite;
+}
+
+.footer p {
+    display: inline;
+}
+
 
 
 
