@@ -1,0 +1,71 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url("https://picsum.photos/1600/800");
+}
+
+.monTitre-italic {
+  color: rebeccapurple;
+  font-size: xx-large;
+  background-color: bisque;
+  font-style: italic;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 2px dotted rebeccapurple;
+  font-family: 'Water Brush', cursive;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.monParagraphe {
+  color: aliceblue;
+  font-size: 2.4rem;
+  font-size: small;
+  background-color: black;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+nav {
+    background-color: antiquewhite;
+    padding: 0.5px;
+    border: 2px solid;
+}
+
+.navBar {
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navBar li {
+    display: inline;
+}
+
+.navBar a {
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navBar a:hover{
+    background-color: aquamarine;
+    text-shadow: 2px;
+}
+
+.arrowBack {
+    height: 30px;
+}
+
+
+
+
+
+/* L'ID est prioritaire sur les class en CSS
+  #monTitrePrincipale {
+      color: green;
+      background-color: aqua;
+  } */
