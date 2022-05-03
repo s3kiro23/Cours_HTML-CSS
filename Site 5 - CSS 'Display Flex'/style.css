@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: lightblue;
+  height: 700px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  /* Selon l'axe principal */
+  justify-content: flex-start;
+  /* Selon l'axe secondaire */
+  align-items: flex-start;
+  /* Passe en dessous si pas de place */
+  /* flex-wrap: wrap; */
+  align-content: center;
+}
+
+.item {
+  background-color: lightcoral;
+  width: 200px;
+}
+
+.one {
+  min-height: 100px;
+  align-self: center;
+}
+
+.two {
+  min-height: 200px;
+  flex-grow: 2;
+
+}
+
+.three {
+  min-height: 300px;
+  flex-grow: 1;
+
+}

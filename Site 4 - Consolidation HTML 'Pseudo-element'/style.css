@@ -1,0 +1,123 @@
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* div.class -> les div qui ont cette classe auront le style */
+
+/* .header {
+  background-color: aquamarine;
+} */
+
+.titre {
+  background-color: aqua;
+  transition: 1s ease-out 200ms;
+  text-align: center;
+}
+.titre:hover {
+  background-color: antiquewhite;
+  font-style: italic;
+  padding: 2em;
+}
+
+.lien {
+  transition: 0.3s ease-out 100ms;
+}
+
+.lien:hover {
+  background-color: aquamarine;
+  color: brown;
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+input:required {
+  background-color: yellow;
+}
+
+input:hover {
+  background-color: violet;
+}
+
+/* input:focus,
+button:focus {
+  background-color: lightblue;
+  font-weight: bold;
+  color: blue;
+  padding: 10px;
+} */
+
+input:checked {
+  margin: 50px;
+  transition: 1.5s ease-in-out 300ms;
+}
+
+/* p {
+  margin: 10px;
+} */
+
+.soiree {
+  font-size: 2em;
+}
+
+.soiree::before {
+  content: "Test";
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.soiree::after {
+  content: "Test";
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+}
+
+.required::after {
+  content: "*";
+}
+
+[data-fonction] {
+  position: relative;
+  width: 200px;
+  margin-top: 10px;
+}
+
+[data-fonction]:hover::after {
+  content: attr(data-fonction);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+/* .description {
+  font-size: 1em;
+}
+
+/* h1, p */
+/* div p */
+/* div > p = enfant direct */
+/* div ~ p = au même niveau d'indentation */
+/* div > p, div li {
+  font-style: italic;
+} */
