@@ -43,7 +43,6 @@ html {
 
 .body-container {
   display: flex;
-  width: 100%;
   padding: 0px 15px;
   margin-top: 30px;
   gap: 30px;
@@ -52,19 +51,19 @@ html {
 .side-bar {
   display: flex;
   flex-direction: column;
-  width: 400px;
   height: calc(100vh - 80px);
   background-color: lightskyblue;
   align-items: center;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .side-bar__coordonnees {
-  
-}
-
-.side-bar__coordonnees__listmain {
-  padding: 5px;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 li {
@@ -76,11 +75,22 @@ li {
   object-fit: cover;
 }
 
+.gros-contenu {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   padding: 40px;
   width: 100%;
   background-color: lightskyblue;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-self: flex-start;
 }
 
 .main-container__titre {
@@ -91,7 +101,9 @@ li {
   font-style: italic;
   font-size: x-large;
   padding-bottom: 20px;
+  text-decoration: underline;
 }
+
 .main-container__block {
   display: flex;
   align-items: center;
@@ -107,4 +119,15 @@ li {
 .main-container__txt {
   font-size: 20px;
   line-height: 30px;
+  text-align: justify;
+}
+
+.footer {
+  height: 50px;
+  background-color: lightgreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-out 10ms;
 }

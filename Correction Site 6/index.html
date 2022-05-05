@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mon site</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .navigation {
+                background-color: rgb(76, 8, 140);
+                color: white;
+                height: 50px;
+                display: flex;
+                padding: 10px 50px;
+                align-items: center;
+                border-bottom: 5px solid rgb(144, 40, 204);
+                transition: 1s ease-out 10ms;
+            }
+
+            .titre {
+                flex-grow: 1;
+                font-size: 30px;
+                font-family: "Indie Flower", cursive;
+                cursor: pointer;
+            }
+
+            .liens {
+                display: flex;
+                gap: 50px;
+                font-size: 20px;
+            }
+
+            .lien {
+                text-decoration: none;
+                color: white;
+                transition: 0.5s ease-out 50ms;
+                font-family: "Indie Flower", cursive;
+            }
+
+            .lien:hover {
+                color: rgb(196, 102, 14);
+            }
+
+            .corps {
+                display: flex;
+            }
+
+            .barre-verticale {
+                height: calc(100vh - 50px);
+                border-right: 5px solid rgb(144, 40, 204);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .coordonnees {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 20px;
+            }
+
+            li {
+                list-style: none;
+                padding-bottom: 10px;
+                border-bottom: 1px solid black;
+            }
+
+            .gros-contenu {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contenu {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin: 50px;
+                padding: 50px;
+                border: 3px solid black;
+                border-radius: 10px;
+                align-self: flex-start;
+            }
+
+            .contenu-titre {
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: underline;
+                align-self: center;
+                font-family: "Indie Flower", cursive;
+            }
+
+            .contenu-description {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .image {
+                width: 300px;
+                border-radius: 50%;
+            }
+
+            .texte {
+                font-size: 20px;
+                line-height: 30px;
+                text-align: justify;
+            }
+
+            .footer {
+                height: 50px;
+                background-color: rgb(144, 40, 204);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 1s ease-out 10ms;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navigation" id="nav">
+                <div
+                    class="titre"
+                    onmouseover="changeBorderColor()"
+                    onmouseleave="cancelColorChange()"
+                    onclick="onClickTitle()"
+                >
+                    Mon site
+                </div>
+                <div class="liens">
+                    <a href="#" class="lien">Accueil</a>
+                    <a href="#" class="lien">A propos</a>
+                    <a href="#" class="lien">Contact</a>
+                </div>
+            </div>
+            <div class="corps">
+                <div class="barre-verticale">
+                    <ul class="coordonnees">
+                        <li>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatem a harum eum ex aperiam quaerat!
+                        </li>
+                        <li>
+                            Eaque dolor non dolore quod natus deserunt
+                            consequuntur illo veniam. Cumque illum enim nesciunt
+                            dignissimos!
+                        </li>
+                        <li>
+                            Alias perferendis molestias repudiandae consequatur
+                            deleniti molestiae accusamus tempore adipisci ipsum
+                            facere? Veniam, et quas.
+                        </li>
+                        <li>
+                            Consectetur doloremque quia labore quaerat pariatur.
+                            Magni molestiae reprehenderit quaerat unde minima
+                            aut obcaecati nihil!
+                        </li>
+                        <li>
+                            Labore doloremque quidem laudantium necessitatibus
+                            dolorem pariatur eos, harum quasi. Laborum accusamus
+                            magnam nulla ut?
+                        </li>
+                    </ul>
+                    <img src="https://picsum.photos/200" alt="Mon image" />
+                </div>
+                <div class="gros-contenu">
+                    <div class="contenu">
+                        <div class="contenu-titre" id="contenu-titre">
+                            Mes voyages
+                        </div>
+                        <div class="contenu-description">
+                            <img
+                                src="https://picsum.photos/1000"
+                                alt="Contenu image"
+                                class="image"
+                            />
+                            <div class="texte">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Debitis quis quisquam quidem
+                                explicabo nesciunt quod quos magni, repudiandae
+                                a quae ipsa inventore asperiores consectetur
+                                quibusdam distinctio eius saepe dignissimos
+                                consequatur necessitatibus nam cupiditate
+                                dolorem rerum eaque? Nemo praesentium, soluta a
+                                odit exercitationem laborum doloremque possimus
+                                alias. Officiis, libero quae aspernatur harum
+                                aliquam, nobis quos alias consequuntur est
+                                dolorem eligendi et, magnam nihil iure aut?
+                                Voluptates atque nisi nobis dolor, incidunt iure
+                                explicabo ipsum culpa reiciendis eaque
+                                consequatur delectus, ullam dolorem praesentium
+                                quaerat iste quidem corrupti rerum asperiores
+                                assumenda provident commodi alias! Vitae veniam
+                                dolores enim, eum nobis voluptas quidem modi!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer" id="footer">Copyright</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const changeBorderColor = () => {
+                const navigation = document.getElementById("nav");
+                navigation.style.borderBottom = "5px solid rgb(196, 102, 14)";
+                const footer = document.getElementById("footer");
+                footer.style.backgroundColor = "rgb(196, 102, 14)";
+            };
+
+            function cancelColorChange() {
+                const navigation = document.getElementById("nav");
+                navigation.style.borderBottom = "5px solid rgb(144, 40, 204)";
+                const footer = document.getElementById("footer");
+                footer.style.backgroundColor = "rgb(144, 40, 204)";
+            }
+
+            function onClickTitle() {
+                const titre = document.getElementById("contenu-titre");
+                if (titre.style.color === "rgb(144, 40, 204)") {
+                    titre.style.color = "rgb(196, 102, 14)";
+                } else {
+                    titre.style.color = "rgb(144, 40, 204)";
+                }
+                const footer = document.getElementById("footer");
+                if (footer.innerHTML === "Copyright") {
+                    footer.innerHTML = "Toto";
+                } else {
+                    footer.innerHTML = "Copyright";
+                }
+            }
+        </script>
+    </body>
+</html>

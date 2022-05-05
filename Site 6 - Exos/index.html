@@ -14,18 +14,25 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
-      <div class="header__title">Goodoo Gang</div>
-      <div class="header__links">
-        <a class="header__link" href="#">Accueil</a>
-        <a class="header__link" href="#">Portfolio</a>
-        <a class="header__link" href="#">Contact</a>
+    <div class="container">
+      <div class="header" id="nav">
+        <div
+          class="header__title"
+          onmouseover="changeBorderColor()"
+          onmouseleave="cancelColorChange()"
+          onclick="onClickTitle()"
+        >
+          Goodoo Gang
+        </div>
+        <div class="header__links">
+          <a class="header__link" href="#">Accueil</a>
+          <a class="header__link" href="#">Portfolio</a>
+          <a class="header__link" href="#">Contact</a>
+        </div>
       </div>
-    </div>
-    <div class="body-container">
-      <div class="side-bar">
-        <div class="side-bar__coordonnees">
-          <ul class="side-bar__coordonnees__listmain">
+      <div class="body-container">
+        <div class="side-bar">
+          <ul class="side-bar__coordonnees">
             <li>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
               iusto! Magnam blanditiis deleniti sed autem.
@@ -45,30 +52,64 @@
           </ul>
           <img class="side-bar__img" src="https://picsum.photos/200" alt="" />
         </div>
-      </div>
-      <div class="main-container">
-        <div class="main-container__titre">Mes Voyages</div>
-        <div class="main-container__block">
-          <div class="main-container__img">
-            <img
-              class="main-container__img1"
-              src="https://picsum.photos/200"
-              alt=""
-            />
+        <div class="big-main-container">
+          <div class="main-container">
+            <div class="main-container__titre">Mes Voyages</div>
+            <div class="main-container__block">
+              <div class="main-container__img">
+                <img
+                  class="main-container__img1"
+                  src="https://picsum.photos/200"
+                  alt=""
+                />
+              </div>
+              <div class="main-container__txt">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, a laborum. Ea aperiam quo consequuntur. Ducimus a
+                  blanditiis aspernatur animi, fuga quidem eaque, error
+                  inventore atque quaerat illo suscipit corporis magni unde aut
+                  in nam quos tenetur repellendus. Voluptas voluptatum, hic modi
+                  expedita iusto velit nemo veritatis delectus, cum, temporibus
+                  illo laudantium reprehenderit dicta quod voluptatem sunt
+                  doloremque ipsam animi.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="main-container__txt">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Similique, a laborum. Ea aperiam quo consequuntur. Ducimus a
-              blanditiis aspernatur animi, fuga quidem eaque, error inventore
-              atque quaerat illo suscipit corporis magni unde aut in nam quos
-              tenetur repellendus. Voluptas voluptatum, hic modi expedita iusto
-              velit nemo veritatis delectus, cum, temporibus illo laudantium
-              reprehenderit dicta quod voluptatem sunt doloremque ipsam animi.
-            </p>
-          </div>
+          <div class="footer" id="footer">Copyright</div>
         </div>
       </div>
     </div>
+    <script>
+      const changeBorderColor = () => {
+        const navigation = document.getElementById("nav");
+        navigation.style.borderBottom = "5px solid rgb(196, 102, 14)";
+        const footer = document.getElementById("footer");
+        footer.style.backgroundColor = "rgb(196, 102, 14)";
+      };
+
+      function cancelColorChange() {
+        const navigation = document.getElementById("nav");
+        navigation.style.borderBottom = "5px solid rgb(144, 40, 204)";
+        const footer = document.getElementById("footer");
+        footer.style.backgroundColor = "rgb(144, 40, 204)";
+      }
+
+      function onClickTitle() {
+        const titre = document.getElementById("contenu-titre");
+        if (titre.style.color === "rgb(144, 40, 204)") {
+          titre.style.color = "rgb(196, 102, 14)";
+        } else {
+          titre.style.color = "rgb(144, 40, 204)";
+        }
+        const footer = document.getElementById("footer");
+        if (footer.innerHTML === "Copyright") {
+          footer.innerHTML = "Toto";
+        } else {
+          footer.innerHTML = "Copyright";
+        }
+      }
+    </script>
   </body>
 </html>
